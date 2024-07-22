@@ -6,7 +6,8 @@ on:
             - main
         paths-ignore:
             - "README.md"
-    workflow_dispatch:
+            - 'helm/**'
+            - 'k8s/**'
 
 jobs:
     build:

@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: go-web-app
-          image:  mounika257/go-web-app:v1
+          image:  mounika257/go-web-app:{{ .Values.image.tag }}
           ports:
           - containerPort: 8050

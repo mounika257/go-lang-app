@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: mounika257/go-web-app
   pullPolicy: IfnotPresent
-  tag: "10048507820"
+  tag: "10048518859"
 
 
 ingress:

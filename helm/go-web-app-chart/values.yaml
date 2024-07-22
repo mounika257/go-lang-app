@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: mounika257/go-web-app
+  pullPolicy: IfnotPresent
+  tag: "v1"
+
+
+ingress:
+  enabled:
+  className: "nginx"
+  annotations: {}
+  hosts:
+    - hosts: 
+      paths: /
+      pathType: ImplementationSpecific

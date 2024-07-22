@@ -5,8 +5,9 @@ on:
         branches:
             - main
         paths-ignore:
-            - "README.md"
-    workflow_dispatch:
+         - 'helm/**'
+         - 'k8s/**'
+         - "README.md"
 
 jobs:
     build:
@@ -34,8 +35,9 @@ jobs:
           with:
            version: v1.56.2
     push:
-        needs: build
+        
         runs-on: ubuntu-latest
+	needs: build
         steps:
             - name: checkout repo
               uses: actions/checkout@v4
